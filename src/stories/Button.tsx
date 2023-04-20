@@ -26,7 +26,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export default function Button({ primary = false, size = 'medium', backgroundColor, label, ...props }: ButtonProps) {
+export function Button({ primary = false, size = 'medium', backgroundColor, label, ...props }: ButtonProps) {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button

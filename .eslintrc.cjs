@@ -30,7 +30,10 @@ module.exports = {
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/button-has-type': 'off',
     'react/no-unknown-property': ['error', { ignore: ['css'] }],
+    'no-restricted-exports': 'off',
+    'import/prefer-default-export': 'off',
     'prettier/prettier': [
       'error',
       {
