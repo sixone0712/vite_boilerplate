@@ -1,15 +1,14 @@
-import { css } from '@emotion/react';
+import { Route, Routes } from 'react-router-dom';
+import Chat from './components/Chat';
+import Room from './components/Room';
 
 function App() {
   return (
     <div className="App">
-      <div
-        css={css`
-          color: red;
-        `}
-      >
-        App
-      </div>
+      <Routes>
+        <Route index element={<Room />} />
+        <Route path="about" element={<Chat />} />
+      </Routes>
     </div>
   );
 }
